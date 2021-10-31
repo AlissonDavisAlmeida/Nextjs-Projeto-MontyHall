@@ -21,4 +21,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
+.area{
+  display: flex;
+}
