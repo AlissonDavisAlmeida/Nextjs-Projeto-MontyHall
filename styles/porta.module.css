@@ -5,7 +5,9 @@
     flex-direction: column;
     align-items: center;
     margin: 5px;
+    margin-top: 15px;
     position: relative;
+    cursor: pointer;
 }
 
 
