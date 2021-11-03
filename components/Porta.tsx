@@ -1,6 +1,6 @@
 import styles from '../styles/porta.module.css';
 import PortaModel from '../model/porta';
-
+import Presente from './Presente';
 interface PortaProps {
     value: PortaModel,
     onChange: (novaPorta : PortaModel)=> void
@@ -32,10 +32,19 @@ const porta = props.value
       )
   }
 
+  function presente() {
+    if(porta.isPresente)  {
+        return <Presente/>
+    }
+    else{
+        return false
+    }
+  }
+
     return (
         <div className={styles.area} onClick={alternarSelecao}>
             <div className={`${styles.estrutura} ${selecionada}`}>
-            {porta.aberta ? false : renderizarPorta()}
+            {porta.aberta ? presente() : renderizarPorta()}
             </div>
             <div className={styles.floor}></div>
         </div>
