@@ -1,14 +1,30 @@
-import { useState } from "react";
-import Porta from "../components/Porta";
-import { atualizarPortas, criarPortas } from "../functions/porta";
-import PortaModel from "../model/porta";
+import styles from '../styles/formulario.module.css';
 
 
-export default function Home() {
+import Cartao from "../components/Cartao";
+import Link from 'next/link';
+
+
+export default function Form() {
   
   return (
-    <div className="area" style={{display:"flex", flexWrap:"wrap"}}>
-      <h1>Inicio do Jogo</h1>
+    <div className={styles.formulario}>
+      <div>
+      <Cartao bgColor="#c0392c">
+        <h1>Monty Hall</h1>
+      </Cartao>
+      <Cartao ></Cartao>
+
+      </div>
+      <div>
+      <Cartao></Cartao>
+      <Cartao bgColor="#28a085">
+    <Link href={`/jogo/4/2`}>
+      <h2 className={styles.link}>Iniciar Jogo</h2>
+      </Link>
+      </Cartao>
+
+      </div>
     </div>
   )
 }

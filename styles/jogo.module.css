@@ -4,18 +4,25 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 .portas{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-self: stretch;
+    position: absolute;
+    top: 3%;
     
 }
 .botoes{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    position: fixed;
+    bottom: 1%;
+    
+    
 }
 
 .botoes button{
@@ -25,4 +32,11 @@
     border: none;
     padding: 10px 25px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+.botoes button:hover{
+    background-color: rgba(210, 210, 247, 0.651);
+    color: black;
+    transition: ease-in 1s;
+    
 }

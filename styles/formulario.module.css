@@ -1,0 +1,15 @@
+.formulario{
+    display: flex;
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.link{
+    flex:1;
+    margin:0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
